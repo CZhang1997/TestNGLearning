@@ -10,17 +10,17 @@ import org.testng.annotations.Test;
  */
 public class FirstTestCase {
 
-    @Test
+    @Test(priority = 1)
     public void setup(){
         System.out.println("This is a test setup");
     }
 
-    @Test
+    @Test(priority = 2)
     public void login(){
         System.out.println("this is a  login test");
     }
 
-    @Test
+    @Test(priority = 3)
     public void teardown(){
         System.out.println("This is a tear down test");
     }
