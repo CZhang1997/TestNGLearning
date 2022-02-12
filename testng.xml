@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <parameter name="browser" value="chrome"></parameter>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter>
-    <test verbose="2" preserve-order="true" name="parameter test">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+    <test verbose="2" preserve-order="true" name="parallel testing">
         <classes>
-            <class name="ParameterExample">
-            </class>
+            <class name="paralleltesting.ParallelTest1"></class>
+<!--            <class name="paralleltesting.ParallelTest2"></class>-->
         </classes>
     </test>
 
-    <parameter name="browser" value="chrome"></parameter>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter>
-    <test verbose="2" preserve-order="true" name="parameter test 2">
+    <test verbose="2" preserve-order="true" name="parallel testing 2">
         <classes>
-            <class name="ParameterExample">
-            </class>
+            <class name="paralleltesting.ParallelTest2"></class>
         </classes>
     </test>
 </suite>
