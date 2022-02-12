@@ -3,8 +3,16 @@
 <suite name="All Test Suite">
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter>
-    <test verbose="2" preserve-order="true" name="grouping test">
+    <test verbose="2" preserve-order="true" name="parameter test">
+        <classes>
+            <class name="ParameterExample">
+            </class>
+        </classes>
+    </test>
 
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"></parameter>
+    <test verbose="2" preserve-order="true" name="parameter test 2">
         <classes>
             <class name="ParameterExample">
             </class>
